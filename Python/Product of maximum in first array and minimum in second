@@ -1,0 +1,6 @@
+#gfg
+class Solution:
+    def find_multiplication (self, arr, brr, n, m) : 
+        n=max(arr)
+        m=min(brr)
+        return n*m
