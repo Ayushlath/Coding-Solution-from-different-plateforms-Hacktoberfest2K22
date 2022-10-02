@@ -1,0 +1,7 @@
+# gfg
+
+def largest( arr, n):
+    a=max (arr)
+    return a
+    
+
