@@ -1,0 +1,15 @@
+t = int(input())
+for i in range(t):
+    nor,prem,cos,tcos = input().split()
+    nor = int(nor)
+    prem = int(prem)
+    cos = int(cos)
+    tcos = int(tcos)
+    tprem = (tcos-(nor*cos))//(prem-nor)
+    if tprem<0:
+        print(-1)
+    else:
+        if cos-tprem<0:
+            print(0,cos)
+        else:
+            print(cos-tprem,tprem)
