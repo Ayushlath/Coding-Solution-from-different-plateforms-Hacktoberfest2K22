@@ -31,3 +31,5 @@ void printInorder(struct Node* node)
     
     printInorder(node->right);
 }
+//Time Complexity: O(N)
+// Space Complexity: If we don’t consider the size of the stack for function calls then O(1) otherwise O(h) where h is the height of the tree. 
