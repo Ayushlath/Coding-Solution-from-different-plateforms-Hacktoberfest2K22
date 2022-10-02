@@ -1,0 +1,25 @@
+# codechef
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	long long n;
+	cin>>n;
+	while(n--){
+	    int a,b;
+	    cin>>a>>b;
+	    long long A[a-1],sum=0;
+	    for(int i = 0;i<a-1;i++){
+	        cin>>A[i];
+	        sum += A[i];
+	    }
+	    if(((b*a)-sum) < 0){
+	        cout<<0<<"\n";
+	    }
+	    else
+	    cout<<(b*a)-sum<<"\n";
+	}
+	return 0;
+}
