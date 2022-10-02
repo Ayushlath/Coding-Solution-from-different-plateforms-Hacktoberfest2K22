@@ -1,0 +1,63 @@
+import java.util.*;
+import java.math.*;
+
+public class Solution {
+    public static long gcd(long n1,long n2)// to find gcd
+    {
+        if(n2==0) return n1;
+        return gcd(n2,n1%n2);
+    }
+    public static long ncr(int n,int k)
+    {
+        long p=1;
+        long q=1;
+        if(n-k<k){
+            k=n-k;
+        }
+        if(k!=0)
+        {
+            while(k>0){
+                p*=n;
+                q*=k;
+                long m=gcd(p,q);
+                p/=m;
+                k/=m;
+                n--;
+                k--;
+            }
+        }else{
+            p=1;
+        }
+        return p;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        long d=1000000007;
+        /* HashSet<Integer> s1 = new HashSet<>(); */
+        /* HashSet<Integer> s2 = new HashSet<>(); */
+        
+        while (t-- > 0) {
+           int n=sc.nextInt();
+           int k=sc.nextInt();
+           sc.nextLine();
+           String s=sc.nextLine();
+           long ans=0;
+            for(int i=k;i>=0;i=i-2)
+            {
+                long an=ncr(n,i);
+                 ans+=(long)Math.pow(2, an);
+                 if(ans>d)
+                 {
+                    ans=ans%d;
+                 }
+            }
+            System.out.println(ans%d);
+        }
+        
+    }
+}
+
+
+//Time Complexity O(n)
+//Space Complexity O(1)
