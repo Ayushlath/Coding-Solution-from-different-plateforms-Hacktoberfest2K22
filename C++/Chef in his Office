@@ -1,0 +1,25 @@
+# Chef_in_his_Office (Codechef)
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+void solve(){
+    long long int a,b;
+    cin>>a>>b;
+    cout<<a*4 + b<<"\n";
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    long long int t;
+    cin>>t;
+	while(t--){
+	    solve();
+	}
+	return 0;
+}
+
+T.C - O(1)
