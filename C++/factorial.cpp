@@ -8,3 +8,16 @@ unsigned int factorial(unsigned int n)
         return 1;
     return n * factorial(n - 1);
 }
+ 
+
+int main()
+{
+    int num = 12;
+    cout << "Factorial of "
+         << num << " is " << factorial(num) << endl;
+    return 0;
+}
+
+Time Complexity: O(n)
+Auxiliary Space: O(1)
+// This code is contributed by SHAHNAWAZ KHAN
