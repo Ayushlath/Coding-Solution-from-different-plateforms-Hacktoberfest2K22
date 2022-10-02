@@ -1,21 +1,19 @@
 //First Method//
-
-class Solution {
-public:
-    bool isPalindrome(int x) {
-        if (x < 0 || (x % 10 == 0 && x != 0)) return false;
-        int rev = 0;
-        while (rev < x) {
-            rev = rev * 10 + x % 10;
-            x /= 10;
+TC-O(logn)
+SC-O(1)
+bool isPalindrome(int x) {
+        if(x<0) return 0;
+        long long int temp=x,rev=0;
+        while(temp){
+            rev=rev*10+temp%10;
+            temp/=10;
         }
-        
-        return x == rev || x == rev / 10;
+        return x==rev;
     }
-};
 
 //Second Method//
-
+TC-O(n)
+SC-O(1)
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -27,7 +25,8 @@ public:
 };
 
 //Third Method//
-
+TC-0(n)
+SC-0(n)
 class Solution {
 public:
     bool isPalindrome(int x) {
