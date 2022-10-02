@@ -1,4 +1,4 @@
-//time complexity->O(n)  & space Complexity-> O(1)
+//time complexity->O(n^2)  & space Complexity-> O(1)
 package com.programs;
 
 import java.util.Arrays;
