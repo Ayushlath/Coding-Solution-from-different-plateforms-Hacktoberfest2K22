@@ -1,0 +1,18 @@
+# codechef
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	long long int n;
+	cin>>n;
+	while(n--){
+	    long long a ,b , c ,d;
+	    cin>>a>>b>>c>>d;
+	    if((a>c) || (b>d))
+	    cout<<"IMPOSSIBLE\n";
+	    else
+	    cout<<"POSSIBLE\n";
+	}
+	return 0;
+}
