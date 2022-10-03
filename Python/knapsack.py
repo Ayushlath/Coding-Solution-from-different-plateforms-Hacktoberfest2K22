@@ -12,3 +12,6 @@ W=int(input())
 N=len(wt)
 a=knapsack(wt,val,W,N)
 print(a)
+
+# Time Complexity is Exponential i.e. O(2^n)
+# Space Complexity is O(n) i.e. Recursion stack space
