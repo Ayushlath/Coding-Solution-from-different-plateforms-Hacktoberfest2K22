@@ -32,3 +32,6 @@ cout<<p;
 
 return 0;
 }
+
+// TIME COMPLEXITY IS O(logn)
+//SPACE COMPLEXITY IS O(1);
