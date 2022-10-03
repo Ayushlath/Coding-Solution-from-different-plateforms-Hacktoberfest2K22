@@ -1,0 +1,79 @@
+
+#include <bits/stdc++.h>
+#define N 10000
+using namespace std;
+
+
+
+class Solution{
+public:
+    vector<int> print_next_greater_freq(int arr[],int n)
+    {
+        vector<int> v(n);
+        stack<int> s;
+        unordered_map<int,int> m;
+        
+        for(int i=0;i<n;i++)
+        {
+            m[arr[i]]++;
+        }
+        
+        for(int i=n-1;i>=0;i--)
+        {
+            int curr=arr[i];
+            
+            if(s.empty())
+            {
+                v[i]=-1;
+            }
+            else if(!s.empty() && m[curr]<m[s.top()])
+            {
+                v[i]=s.top();
+            }
+            
+            else 
+            {
+                while(s.size()>0 && m[s.top()]<=m[curr])
+                {
+                    s.pop();
+                }
+                if(s.size()==0)
+                v[i]=-1;
+                else 
+                v[i]=s.top();
+                
+            }
+            s.push(curr);
+        }
+        return v;
+    }
+};
+
+
+
+int main()
+{
+    int arr[N];
+    
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        
+        for(int i=0; i<n; i++)
+            cin>>arr[i];
+        
+        Solution ob;
+        vector<int> ans=ob.print_next_greater_freq(arr,n);
+        for(auto x:ans){
+            cout<<x<<" ";
+        }
+        cout << endl;
+    }
+	return 1;
+}
+
+// time complexity: O(n)
+// space complexity: O(n)
