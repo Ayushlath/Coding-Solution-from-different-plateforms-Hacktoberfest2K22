@@ -1,4 +1,5 @@
 	//Function to return list containing vertices in Topological order. 
+	//Time complexity:- O(V+E), E-edges and V-vertices
 	void topo(int v,vector<int>&vis,stack<int>&s,vector<int>adj[])
 	{
 	    vis[v]=1;
