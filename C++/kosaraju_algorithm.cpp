@@ -1,4 +1,5 @@
 	//Function to find number of strongly connected components in the graph.
+	//Time complexity O(V+E), E-edges,V-vertices
 	int vis[5001];
 	int vis2[5001];
 	void topo(int v,vector<int>adj[],stack<int>&s)
