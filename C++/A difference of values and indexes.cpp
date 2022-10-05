@@ -1,6 +1,6 @@
 /*Given a unsorted array, you need to find the maximum difference of absolute values of elements and indexes, i.e., for i < j, calculate maximum of | A[i] - A[j] | + | i - j |. 
 
- 
+ Link: https://practice.geeksforgeeks.org/problems/a-difference-of-values-and-indexes0302/0
 
 Example 1:
 
