@@ -1,6 +1,9 @@
 # This repo has been excluded from Hacktoberfest_2k22.
 
-#  Hacktoberfest 2022 Is Awesome🔥
+ <h1 align="center">
+ <a href="https://git.io/typing-svg">
+ <img src="https://readme-typing-svg.herokuapp.com?font=&size=25&duration=4000&pause=1000&color=29F757&background=B7FFD800&multiline=true&width=563&height=65&lines=+.+.+.+.+Hacktoberfest+2022+Is+Awesome+.+.+.+." alt="Typing SVG" /></a>
+</h1>
 ![image](https://user-images.githubusercontent.com/70385488/192114009-0830321a-d227-4a4d-8411-6c03b54d7ce6.png)
 
 ## What is Hacktoberfest? :thinking:
